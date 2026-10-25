@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PipeBeamer support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #f5f6f8;
+      --surface: #ffffff;
+      --text: #1a1c20;
+      --muted: #565c66;
+      --accent: #8c5d00;
+      --border: #dde1e6;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #121417;
+        --surface: #1c1f24;
+        --text: #e6e8eb;
+        --muted: #a9b0ba;
+        --accent: #ffb300;
+        --border: #2c3138;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; }
+    nav { display: flex; gap: 16px; margin-bottom: 24px; }
+    a { color: var(--accent); font-weight: 600; }
+    nav a { text-decoration: none; }
+    article {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    h1 { font-size: 28px; line-height: 1.2; margin: 0 0 4px; }
+    h2 { font-size: 18px; margin: 24px 0 4px; }
+    p { margin: 0; }
+    .meta { color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+<body>
+<main>
+  <nav>
+    <a href="#en">English</a>
+    <a href="#pl">Polski</a>
+  </nav>
+
+  <article id="en" lang="en">
+    <h1>Support</h1>
+    <p class="meta">PipeBeamer</p>
+    <h2>Contact</h2>
+    <p>Write to <a href="mailto:torzewicz.michal@gmail.com">torzewicz.michal@gmail.com</a> with a problem, a question or an idea for PipeBeamer. Michał Torzewicz develops the app and replies.</p>
+    <h2>Report a problem</h2>
+    <p>Describe what you did, what you expected and what happened. Add the phone model, the system version and the app version from the store. Do not send personal data or data of your company.</p>
+    <h2>The end of the exposure does not sound</h2>
+    <p>Allow notifications for PipeBeamer in the system settings. On a silenced iPhone the end does not sound. A Focus also silences it, unless PipeBeamer is an allowed app in that Focus.</p>
+    <h2>Privacy</h2>
+    <p>Read the <a href="https://torzewicz.github.io/pipebeamer-privacy/">privacy policy</a>.</p>
+  </article>
+
+  <article id="pl" lang="pl">
+    <h1>Pomoc</h1>
+    <p class="meta">PipeBeamer</p>
+    <h2>Kontakt</h2>
+    <p>Napisz na <a href="mailto:torzewicz.michal@gmail.com">torzewicz.michal@gmail.com</a>, jeśli masz problem, pytanie albo pomysł dotyczący PipeBeamera. Aplikację tworzy Michał Torzewicz i to on odpowiada.</p>
+    <h2>Zgłoś błąd</h2>
+    <p>Opisz, co się stało, krok po kroku i czego oczekiwano. Podaj model telefonu, wersję systemu i wersję aplikacji ze sklepu. Nie wysyłaj danych osobowych ani danych swojej firmy.</p>
+    <h2>Koniec naświetlania nie dzwoni</h2>
+    <p>Zezwól PipeBeamerowi na powiadomienia w ustawieniach systemu. Na wyciszonym iPhonie koniec nie zadzwoni. Tryb skupienia też go wycisza, chyba że PipeBeamer jest na liście aplikacji dozwolonych w tym trybie.</p>
+    <h2>Prywatność</h2>
+    <p>Przeczytaj <a href="https://torzewicz.github.io/pipebeamer-privacy/">politykę prywatności</a>.</p>
+  </article>
+</main>
+</body>
+</html>
